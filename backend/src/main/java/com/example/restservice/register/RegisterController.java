@@ -5,10 +5,10 @@ import javax.servlet.http.HttpSession;
 import com.example.restservice.register.model.UserProfile;
 import com.example.restservice.register.model.ApiResponse;
 import com.example.restservice.register.RegisterService;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.CrossOrigin;
