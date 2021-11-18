@@ -17,7 +17,7 @@ Postman or any SPA can be used to invoke the API. If running locally:
 ```
 POST https://localhost:8080/register
 {
-	"email":"dan.yb.tobias@gmail.com"
+	"email":{someEmail}
 }
 ```
 
