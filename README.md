@@ -1,7 +1,7 @@
 # Okta (Custom) Spring Registration API
 
 ## Running the Project
-In terms of dependencies, I used [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html), and the Okta Java SDK version 6.0.0. Also, this is a Maven project. The project can be run by cding into the backend directory and running
+In terms of dependencies, I used [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html), and the [Okta Java SDK](https://github.com/okta/okta-sdk-java) version 6.0.0. Also, this is a Maven project. The project can be run by cding into the backend directory and running
 
 
 ```
