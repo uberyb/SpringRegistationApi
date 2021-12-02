@@ -17,10 +17,10 @@ Postman or any SPA can be used to invoke the API. If running locally:
 ```
 POST https://localhost:8080/cu
 {
-  "ssn" : "{somessn}"
-	"email":"{someEmail}"
-  "firstName": "{someFirstName}"
-  "lastName": "{someLastName}"
+  "ssn" : "{somessn}",
+  "email":"{someEmail}",
+  "firstName": "{someFirstName}",
+  "lastName": "{someLastName}",
   "login": "{somelogin}"
 }
 ```
