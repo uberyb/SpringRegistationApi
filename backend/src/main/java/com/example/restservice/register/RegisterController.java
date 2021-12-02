@@ -17,16 +17,16 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @CrossOrigin // can specify a specific host later if I want to.
 public class RegisterController {
 
-    @Autowired
-    private RegisterService registerService;
+  @Autowired
+  private RegisterService registerService;
 
-    @PostMapping(value = "/register", consumes = "application/json", produces = "application/json")
-    public ApiResponse createUser(@RequestBody UserProfile profile) {
-        return registerService.createUser(profile);
-    }
+  @PostMapping(value = "/cu", consumes = "application/json", produces = "application/json")
+  public ApiResponse createUser(@RequestBody UserProfile profile) {
+    return registerService.createUser(profile);
+  }
 
-    @PostMapping(value = "/activate", consumes = "application/json", produces = "application/json")
-    public ApiResponse activateUser(@RequestBody UserProfile profile) {
-        return registerService.activateUser(profile);
-    }
+  @PostMapping(value = "/activate", consumes = "application/json", produces = "application/json")
+  public ApiResponse activateUser(@RequestBody UserProfile profile) {
+    return registerService.activateUser(profile);
+  }
 }

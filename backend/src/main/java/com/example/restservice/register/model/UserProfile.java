@@ -1,67 +1,82 @@
 package com.example.restservice.register.model;
 
 public class UserProfile {
-    private String email;
-    private String token;
-    private String id;
-    private String password;
-//    public UserProfile(String email, String firstName, String lastName) {
-//        this.email = email;
-//    }
-    // Gets
-//    public String getFirstName() {
-//        return firstName;
-//    }
-//
-//    public String getLastName() {
-//        return lastName;
-//    }
+  private String email, firstName, lastName, token, id, password, ssn, login;
 
-    public String getEmail() {
-        return email;
-    }
+  public UserProfile(String email, String firstName, String lastName) {
+    this.email = email;
+  }
 
-    public String getToken() {
-        return token;
-    }
+  // Gets
+  public String getFirstName() {
+    return firstName;
+  }
 
-    public String getId() {
-        return id;
-    }
+  public String getLastName() {
+    return lastName;
+  }
 
+  public String getEmail() {
+    return email;
+  }
 
-    public String getPassword() {
-        return password;
-    }
+  public String getToken() {
+    return token;
+  }
 
-    // Sets
+  public String getId() {
+    return id;
+  }
 
-//    public void setFirstName(String firstName) {
-//        this.firstName = firstName;
-//    }
-//
-//    public void setLastName(String lastName) {
-//        this.lastName = lastName;
-//    }
+  public String getPassword() {
+    return password;
+  }
 
-    public UserProfile setPassword(String password) {
-        this.password = password;
-        return this;
-    }
+  public String getSsn() {
+    return ssn;
+  }
 
-    public UserProfile setEmail(String email) {
-        this.email = email;
-        return this;
-    }
+  public String getLogin() {
+    return login;
+  }
 
-    public UserProfile setToken(String token) {
-        this.token = token;
-        return this;
-    }
+  // Sets
 
-    public UserProfile setId(String id) {
-        this.id = id;
-        return this;
-    }
+  // public void setFirstName(String firstName) {
+  // this.firstName = firstName;
+  // }
+  //
+  // public void setLastName(String lastName) {
+  // this.lastName = lastName;
+  // }
+  public UserProfile setLogin(String login) {
+    this.login = login;
+    return this;
+  }
+
+  public UserProfile setSsn(String ssn) {
+    this.ssn = ssn;
+    return this;
+  }
+
+  public UserProfile setPassword(String password) {
+    this.password = password;
+    return this;
+  }
+
+  public UserProfile setEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public UserProfile setToken(String token) {
+    this.token = token;
+    return this;
+  }
+
+  public UserProfile setId(String id) {
+    this.id = id;
+    return this;
+  }
 
 }

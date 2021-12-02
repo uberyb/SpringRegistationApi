@@ -15,9 +15,13 @@ You'll need to edit `backend/src/main/resources/application.properties` to inclu
 Postman or any SPA can be used to invoke the API. If running locally:
 
 ```
-POST https://localhost:8080/register
+POST https://localhost:8080/cu
 {
-	"email":{someEmail}
+  "ssn" : "{somessn}"
+	"email":"{someEmail}"
+  "firstName": "{someFirstName}"
+  "lastName": "{someLastName}"
+  "login": "{somelogin}"
 }
 ```
 
