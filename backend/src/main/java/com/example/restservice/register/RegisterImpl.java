@@ -41,7 +41,7 @@ public class RegisterImpl implements RegisterService {
 
   public ApiResponse createUser(UserProfile profile) {
 
-    UserList users = this.client.listUsers(null, "profile.ssn eq \"" + profile.getSsn() + "\"", null, null, null);
+    UserList users = this.client.listUsers(null, null, "profile.ssn eq \"" + profile.getSsn() + "\"", null, null);
     try {
       User user = users.single();
 
@@ -53,6 +53,9 @@ public class RegisterImpl implements RegisterService {
           .setEmail(profile.getEmail())
           .setLogin(profile.getLogin());
       user.update();
+      ApiResponse r = new ApiResponse()
+          .setMsg("User updated.");
+      return r;
       // continue on with update flow.
     } catch (java.lang.IllegalStateException ill) {
       // this exception means that we need to create the user.
@@ -76,6 +79,7 @@ public class RegisterImpl implements RegisterService {
     } catch (ResourceException e) {
       ApiResponse r = new ApiResponse()
           .setMsg(e.getError().getMessage());
+      return r;
     }
 
     // Attempt to create a user. On failure, grab the error message and return it.
