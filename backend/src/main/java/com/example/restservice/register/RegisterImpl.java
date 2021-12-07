@@ -47,8 +47,8 @@ public class RegisterImpl implements RegisterService {
 
       // Before performing an update, we should also probably check which fields are
       // null and which are not.
-
-      user.getProfile().setFirstName(profile.getFirstName())
+      System.out.println(profile.getFirstName());
+      user.getProfile().setFirstName(profile.getFirstName()) // Firstname and lastName are not being updated.
           .setLastName(profile.getLastName())
           .setEmail(profile.getEmail())
           .setLogin(profile.getLogin());

@@ -5,6 +5,10 @@ public class UserProfile {
 
   public UserProfile(String email, String firstName, String lastName) {
     this.email = email;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.login = login;
+
   }
 
   // Gets
@@ -42,13 +46,16 @@ public class UserProfile {
 
   // Sets
 
-  // public void setFirstName(String firstName) {
-  // this.firstName = firstName;
-  // }
-  //
-  // public void setLastName(String lastName) {
-  // this.lastName = lastName;
-  // }
+  public UserProfile setFirstName(String firstName) {
+    this.firstName = firstName;
+    return this;
+  }
+
+  public UserProfile setLastName(String lastName) {
+    this.lastName = lastName;
+    return this;
+  }
+
   public UserProfile setLogin(String login) {
     this.login = login;
     return this;
