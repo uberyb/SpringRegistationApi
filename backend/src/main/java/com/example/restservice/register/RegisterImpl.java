@@ -47,7 +47,6 @@ public class RegisterImpl implements RegisterService {
 
       // Before performing an update, we should also probably check which fields are
       // null and which are not.
-      System.out.println(profile.getFirstName());
       user.getProfile().setFirstName(profile.getFirstName()) // Firstname and lastName are not being updated.
           .setLastName(profile.getLastName())
           .setEmail(profile.getEmail())
@@ -82,7 +81,6 @@ public class RegisterImpl implements RegisterService {
       return r;
     }
 
-    // Attempt to create a user. On failure, grab the error message and return it.
   }
 
   public ApiResponse activateUser(UserProfile profile) {
